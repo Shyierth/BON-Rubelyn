@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>RGBooks paradise Products</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+        <img src="image\logo.png" width="10%">
+      </div>
+      <nav>
+        <ul id="MenuItems">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="acccount.html">Account</a></li>
+        </ul>
+      </nav>
+      <a href="cart.html"><img src="image\cart.jpg" width="30px" height="30px"></a>
+      <img src="image\menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+  </div>
+  <!-- single product details -->
+  <div class="small-container single-product">
+    <div class="row">
+        <div class="col-2">
+            <img src="image\k1.jpg" width="100%" id="ProductImg">
+
+            <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="image\k3.jpg" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="image\k1.jpg" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="image\k4.jpg" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="image\k2.jpg" width="100%" class="small-img">
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <p>Fictional Book</p>
+            <h1>THE GIRL WHO DARNK THE MOON</h1>
+            <h4>₱699,00</h4>
+            <input type="number" id="quantity" value="1">
+            <button onclick="addToCart()" class="btn">Add to Cart</button>
+            <button onclick="redirectToCheckout()" class="btn checkout-btn">Checkout</button>
+
+            <h3>Product Details<i class='bx bx-right-indent' ></i></h3>
+            <br>
+            <p>The stunning third book in the sexy, action-packed Crescent City series, following the global bestsellers House of Earth and Blood and House of Sky and Breath.
+
+              Bryce Quinlan never expected to see a world other than Midgard, but now that she has, all she wants is to get back. Everything she loves is in Midgard: her family, her friends, her mate. Stranded in a strange new world, she's going to need all her wits about her to get home again. And that's no easy feat when she has no idea who to trust.
+              
+              Hunt Athalar has found himself in some deep holes in his life, but this one might be the deepest of all. After a few brief months with everything he ever wanted, he's in the Asteri's dungeons again, stripped of his freedom and without a clue as to Bryce's fate. He's desperate to help her, but until he can escape the Asteri's leash, his hands are quite literally tied.
+              </p>
+        </div>
+    </div>
+  </div>
+  <!-- title -->
+  <div class="small-container">
+    <div class="row row-2">
+      <h2>Related Products</h2>
+      <p>View More</p>
+    </div>
+  </div>
+
+
+  <!-- products -->
+
+  <div class="small-container">
+      
+    <div class="row">
+      <div class="col-4">
+        <a href="product17.html"><img src="image\v1.jpg"></a>
+        <h4>Maybe someday</h4>
+        <h6>Fictional book</h6>
+        <div class="rating">
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+        </div>
+        <p>₱395,00</p>
+      </div>
+      
+      <div class="col-4">
+        <a href="product18.html"><img src="image\s1.jpg"></a>
+        <h4>eleanor park</h4>
+        <h6>Non-Fictional book</h6>
+        <div class="rating">
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star-half'></i>
+        </div>
+        <p>₱1,239</p>
+      </div>
+      
+      <div class="col-4">
+        <a href="product19.html"><img src="image\r1.jpg"></a>
+        <h4>BIll brison</h4>
+        <h6>Fictional book</h6>
+        <div class="rating">
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star' ></i>
+        </div>
+        <p>₱595,00</p>
+      </div>
+      
+      <div class="col-4">
+        <a href="product20.html"><img src="image\n1.jpg"></a>
+        <h4>5club</h4>
+        <h6>Fictional book</h6>
+        <div class="rating">
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bxs-star'></i>
+          <i class='bx bx-star'></i>
+        </div>
+        <p>₱719,00</p>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+
+    <!-- footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and ios Mobile Phone</p>
+            <div class="app-logo">
+              <a href="https://play.google.com/store/apps/details?id=com.nike.omega&pcampaignid=web_share"><img src="/IMAGE/google-play.png"></a>
+              <a href="https://apps.apple.com/us/app/nike-shoes-apparel-stories/id1095459556"><img src="/IMAGE/app-store.png"></a>
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="image\icon book.png">
+            <p>Some books leave us free and some books make us free.</p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Follow Us</h3>
+            <ul>
+              <a href="https://www.facebook.com/NikeSportsPH?mibextid=rS40aB7S9Ucbxw6v"><li style="color: antiquewhite;">Facebook</li></a>
+              <a href="https://x.com/NikePHStore?s=20"><li style="color: antiquewhite;">Twitter</li></a>
+              <a href="https://www.instagram.com/nikephofficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><li style="color: antiquewhite;">Instagram</li></a>
+              <a href="https://www.tiktok.com/@nike?is_from_webapp=1&sender_device=pc"><li style="color: antiquewhite;">Tiktok</li></a>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <p class="copyright">2024-2025|RGBooks store</p>
+      </div>
+    </div>
+    <!-- js toggle menu -->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle(){
+        if( MenuItems.style.maxHeight == "0px")
+        {
+          MenuItems.style.maxHeight = "200px"
+        }
+        else
+        {
+          MenuItems.style.maxHeight = "0px"
+        }
+      }
+    </script>
+    </script>
+    <!-- js for product gallery -->
+    <script>
+      var ProductImg = document.getElementById("ProductImg");
+      var SmallImg = document.getElementsByClassName("small-img");
+
+          SmallImg[0].onclick = function()
+          {
+            ProductImg.src = SmallImg[0].src;
+          }
+          SmallImg[1].onclick = function()
+          {
+            ProductImg.src = SmallImg[1].src;
+          }
+          SmallImg[2].onclick = function()
+          {
+            ProductImg.src = SmallImg[2].src;
+          }
+          SmallImg[3].onclick = function()
+          {
+            ProductImg.src = SmallImg[3].src;
+          }
+
+    </script>
+<!-- add -->
+
+<script>
+  function addToCart() {
+    // Get the product details
+    var productName = "Luka 2 'Trick Shot' PF"; // Replace with your actual product name
+    var productPrice = 7395; // Replace with your actual product price
+    var productImage = "/IMAGE/Luka 2 'Trick Shot' PF.png"; // Replace with the actual product image URL
+    var quantity = parseInt(document.getElementById("quantity").value);
+
+    // Create a cart item object
+    var cartItem = {
+      name: productName,
+      price: productPrice,
+      image: productImage, // Add the product image
+      quantity: quantity
+    };
+
+    // Check if cart exists in local storage
+    var cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    // Add the item to the cart
+    cart.push(cartItem);
+
+    // Update the cart in local storage
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    // Alert the user about adding to the cart (you can customize this part)
+    alert("Product added to the cart!");
+
+  
+  }
+</script>
+
+    
+</body>
+</html>

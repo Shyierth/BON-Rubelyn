@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>RGBooks paradise Products</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="header">
+    <div class="navbar">
+      <div class="logo">
+        <img src="image\logo.png" width="15%">
+      </div>
+      <nav>
+        <ul id="MenuItems">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="acccount.html">Account</a></li>
+        </ul>
+      </nav>
+      <a href="cart.jpg"><img src="image\cart.jpg" width="30px" height="30px"></a>
+      <img src="image\menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+  </div>
+
+  <video autoplay loop muted plays-inline class="back-video">
+    <source src="image\video .mp4" type="video/mp4">
+  </video>
+
+  <div class="row" style="margin-bottom: -0.1%;">
+    <div class="col-2">
+      <h1 style="color: rgb(174, 145, 243);">Welcome to the world of books:<br>Incredible paradise</h1>
+      <p>Open the worlds  of books</p>
+      <a href="" class="btn">Explore Now!</a>
+    </div>
+    <div class="col-2">
+      <img src="/IMAGE/ok.png" width="80%">
+    </div>
+  </div>
+  
+    <!-- footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and ios Mobile Phone</p>
+            <div class="app-logo">
+              <a href="https://play.google.com/store/apps/details?id=com.nike.omega&pcampaignid=web_share"><img src="/IMAGE/google-play.png"></a>
+              <a href="https://apps.apple.com/us/app/nike-shoes-apparel-stories/id1095459556"><img src="/IMAGE/app-store.png"></a>
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="image\icon book.png">
+            <p>Some books leave us free and some books make us free.</p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Follow Us</h3>
+            <ul>
+              <a href="https://www.facebook.com/NikeSportsPH?mibextid=rS40aB7S9Ucbxw6v"><li style="color: antiquewhite;">Facebook</li></a>
+              <a href="https://x.com/NikePHStore?s=20"><li style="color: antiquewhite;">Twitter</li></a>
+              <a href="https://www.instagram.com/nikephofficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><li style="color: antiquewhite;">Instagram</li></a>
+              <a href="https://www.tiktok.com/@nike?is_from_webapp=1&sender_device=pc"><li style="color: antiquewhite;">Tiktok</li></a>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <p class="copyright">2024-2025|RGBooks store</p>
+      </div>
+    </div>
+    <!-- js toggle menu -->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle(){
+        if( MenuItems.style.maxHeight == "0px")
+        {
+          MenuItems.style.maxHeight = "200px"
+        }
+        else
+        {
+          MenuItems.style.maxHeight = "0px"
+        }
+      }
+    </script>
+</body>
+</html>
